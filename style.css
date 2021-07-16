@@ -3,6 +3,7 @@
 :root {
     --purple: #6930C3;
     --lightPurple: #C25EFF;
+    --darkPurple: #7510F7;
     --brown: #4C4C4C;
     --brownBg: #343434;
     --darkBg: #212121;
@@ -418,7 +419,7 @@ section {
         border-width: 1px;
         border-image: linear-gradient(
           to bottom, 
-          red, 
+          var(--lightPurple), 
           rgba(0, 0, 0, 0)
         ) 1 100%;
     }
@@ -444,10 +445,103 @@ section {
 
 #contact {
     background-color: var(--brownBg);
+    min-height: 70vh;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    padding: 2em 0;
+}
+
+.contactCover {
+    min-width: 70%;
+    margin: auto;
+}
+
+.contactCover > h1 {
+    color: #FFF;
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.form {
+    width: 100%;
+    display: grid;
+    gap: 2em;
+}
+
+.inputs > div {
+    margin: 0 10px;
+}
+
+.left, .right {
+    display: grid;
+    justify-content: space-between;
+    width: 50%;
+    gap: 2em;
+}
+
+.inputs input, textarea {
+    width: 300px;
+    padding: 6px;
+    outline: 1px solid #FFF;
+    border: none;
+    background: none;
+    color: #FFF;
+}
+
+.inputs input:focus {
+    outline: 1px solid #FFF;
+}
+
+.inputs input::placeholder, textarea::placeholder {
+    color: #FFF;
+}
+
+.inputs {
+    display: flex;
+}
+
+#submit {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    padding: 7px 80px;
+    background: none;
+    outline: 2px solid #FFF;
+    border: none;
+    color: #FFF;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 700px) {
+    .contactCover > h1 {
+        margin-bottom: 1em;
+    }
+    .inputs {
+        display: grid;
+        gap: 2em;
+    }
+    textarea {
+        height: 150px;
+    }
 }
 
 /* footer */
 
 footer {
     min-height: 30vh;
+    background-color: var(--purple);
+    text-align: center;
+    color: #FFF;
+}
+
+.main {
+    padding: 2em 0;
+}
+
+.copyright {
+    background-color: var(--darkPurple);
+    padding: 1em 2em;
 }
