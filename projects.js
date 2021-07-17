@@ -34,7 +34,7 @@ const projects = [
         name: "More Side-Projects",
         about: "While learning the web, I've create many more website and webapp; Here's the list of ones that are deployed. Others can be found either on my Github 🕸 or on Localhost 💻",
         project: "https://linktr.ee/rootz491",
-        github: "https://github/rootz491",
+        github: "https://github.com/rootz491",
         img: "./img/linktree.png"
     },
 ]
