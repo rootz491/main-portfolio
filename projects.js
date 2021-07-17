@@ -46,9 +46,13 @@ projects.forEach(pr => {
     const about = node.querySelector('.p-about');
     about.innerText = pr.about;
     const project = node.querySelector('.p-project');
-    project.href = pr.project;
+    pr.project ?
+    project.href = pr.project :
+    pr.remove();
     const github = node.querySelector('.p-github');
-    github.href = pr.github;
+    pr.github ? 
+    github.href = pr.github :
+    github.remove();
     const img = node.querySelector('.p-img');
     img.src = pr.img;
     projectCover.appendChild(node);

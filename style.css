@@ -216,6 +216,16 @@ section {
     margin: 20px 0;
 }
 
+.about p a {
+    text-decoration: underline;
+    color: #FFF;
+}
+
+#tryhackme {
+    width: 200px;
+    margin: auto;
+}
+
 @media screen and (max-width: 770px) {
     #about {
         gap: .5em;
