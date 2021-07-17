@@ -441,6 +441,133 @@ section {
 
 /* projects */
 
+#projects {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    padding: 4em 0;
+    width: 100%;
+}
+
+.projectsCover {
+    width: 100%;
+    margin: auto;
+}
+
+.projectsCover > h1 {
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.projects {
+    padding: 0 1em;
+    min-height: 50vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 400px);
+    justify-content: center;
+    gap: 2em;
+}
+
+.project {
+    width: 400px;
+    border-radius: 3px;
+}
+
+.projectImg {
+    outline: .1px solid var(--brownBg);
+    display: flex;
+    justify-content: center;
+}
+
+.projectImg img {
+    height: 150px;
+    width: auto;
+    margin: auto;
+}
+
+.projectInfo {
+    outline: .1px solid var(--brownBg);
+    background-color: var(--brownBg);
+    padding: .5em 1em;
+    color: #FFF;
+}
+
+.projectInfo h1 {
+    font-size: 16px;
+}
+
+.projectInfo p {
+    font-size: 13px;
+    min-height: 80px;
+}
+
+.projectBtns {
+    margin-top: 1em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.projectBtns a {
+    display: flex;
+    align-items: center;
+    padding: 2px 4px;
+    color: white;
+    font-size: 10px;
+}
+
+.projectBtns div {
+    display: grid;
+    place-content: center;
+    width: 16px;
+    margin-right: 5px;
+}
+
+.extLink {
+    background-color: var(--purple);
+}
+
+.githubLink {
+    background-color: var(--darkBg);
+}
+
+@media screen and (max-width: 1300px) {
+    .projects {
+        grid-template-columns: repeat(2, 400px);
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .projects {
+        grid-template-columns: repeat(2, 300px);
+    }
+    .project {
+        width: 300px;
+    }
+    .projectImg img {
+        height: 140px;
+    }
+    .projectInfo h1 {
+        font-size: 15px;
+    }
+    .projectInfo p {
+        font-size: 12px;
+        height: 90px;
+    }
+}
+
+@media screen and (max-width: 670px) {
+    .projects {
+        grid-template-columns: repeat(1, 300px);
+    }
+}
+
+@media screen and (max-width: 330px) {
+    .projects {
+        padding: 0;
+    }
+}
+
 /* contact */
 
 #contact {
@@ -515,6 +642,20 @@ button {
     cursor: pointer;
 }
 
+#mail {
+    width: 80%;
+    margin: 4em 0;
+}
+
+#mail > h2 {
+    color: #FFF;
+    font-size: 13px;
+}
+
+#mail > a {
+    color: var(--lightPurple);
+}
+
 @media screen and (max-width: 700px) {
     .contactCover > h1 {
         margin-bottom: 1em;
@@ -522,16 +663,19 @@ button {
     .inputs {
         display: grid;
         gap: 2em;
+        justify-content: center;
     }
     textarea {
         height: 150px;
+    }
+    #mail {
+        padding: 0 1em;
     }
 }
 
 /* footer */
 
 footer {
-    min-height: 30vh;
     background-color: var(--purple);
     text-align: center;
     color: #FFF;

@@ -10,6 +10,7 @@
     <script defer src="./typeWriterEffect.js"></script>
     <script defer src="./app.js"></script>
     <script defer src="./writeUps.js"></script>
+    <script defer src="./projects.js"></script>
 </head>
 <body>
     
@@ -157,8 +158,29 @@
             </div>
         </section>
 
-        <section id="projects">
+        <!-- writeup template -->
+        <template id="projectTemp">
+            <div class="project">
+                <div class="projectImg">
+                    <img class="p-img" src="./img/perky.png" alt="project img">
+                </div>
+                <div class="projectInfo">
+                    <h1 class="p-name">Perky Poetry</h1>
+                    <p class="p-about">It is a web application, for my sister to post his poems & others can like/comment on it. It's full-stack project, powered by expressJs and firebase & hosted on Heroku; </p>
+                    <div class="projectBtns">
+                        <a class="extLink pro p-project" target="blank" href="#url"><div><img src="https://img.icons8.com/ios-glyphs/60/ffffff/external-link.png" alt="external link"/></div> Live Preview</a>
+                        <a class="githubLink p-github" target="blank" href="#github"><div><img src="./img/github 1.svg" alt="github link"/></div> Source Code</a>
+                    </div>
+                </div>            
+            </div>
+        </template>
 
+        <section id="projects">
+            <div class="projectsCover">
+                <h1>Projects</h1>
+                <div class="projects">
+                </div>
+            </div>
         </section>
 
         <section id="contact">
@@ -167,18 +189,24 @@
                 <form class="form" method="POST">
                     <div class="inputs">
                         <div class="left">
-                            <input type="text" placeholder="First Name">
-                            <input type="text" placeholder="Last Name">
-                            <input type="email" placeholder="Email id">
+                            <input type="text" placeholder="First Name" required>
+                            <input type="text" placeholder="Last Name" required>
+                            <input type="email" placeholder="Email id" required>
                         </div>
                         <div class="right">
-                            <textarea name="message" id="message" placeholder="Your Message..."></textarea>
+                            <textarea name="message" id="message" placeholder="Your Message..." required></textarea>
                         </div>
                     </div>
                     <div id="submit">
                         <button type="submit">send</button>
                     </div>
                 </form>
+                <div id="mail">
+                    <h2>
+                        📧 For any reason if the mail is not sent, please send it to
+                    </h2>
+                    <a href="mailto:karansh491@gmail.com">karansh491@gmail.com</a>
+                </div>
             </div>
         </section>
 
