@@ -481,7 +481,7 @@ section {
 
 .project {
     width: 400px;
-    border-radius: 3px;
+    box-shadow: 0px 4px 5px rgb(0 0 0 / 50%);
 }
 
 .projectImg {
@@ -509,7 +509,7 @@ section {
 
 .projectInfo p {
     font-size: 13px;
-    min-height: 80px;
+    min-height: 85px;
 }
 
 .projectBtns {
