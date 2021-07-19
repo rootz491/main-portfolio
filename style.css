@@ -67,6 +67,14 @@ header a {
     display: none;
 }
 
+#menu1 {
+    display: block;
+}
+
+#menu2 {
+    display: none;
+}
+
 #menu:checked ~ div {
     display: grid;
     align-items: center;
@@ -77,14 +85,22 @@ header a {
     display: none;
 }
 
-#menu:checked ~ #menuBtn {
+#menu:checked ~ #menu1 {
+    display: none;
+}
+
+#menu:checked ~ #menu2 {
+    display: block;
+}
+
+#menu:checked ~ .menuBtn {
     position: absolute;
     z-index: 150;
     top: .5em;
     left: .5em;
 } 
 
-#menuBtn {
+.menuBtn {
     display: none;
     cursor: pointer;
     width: 25px;
@@ -95,7 +111,7 @@ header a {
     header {
         justify-content: space-between;
     }
-    #menuBtn {
+    .menuBtn {
         display: initial;
     }
     header > div {
