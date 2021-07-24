@@ -67,39 +67,6 @@ header a {
     display: none;
 }
 
-#menu1 {
-    display: block;
-}
-
-#menu2 {
-    display: none;
-}
-
-#menu:checked ~ div {
-    display: grid;
-    align-items: center;
-    justify-content: center;
-}
-
-#menu:checked ~ a {
-    display: none;
-}
-
-#menu:checked ~ #menu1 {
-    display: none;
-}
-
-#menu:checked ~ #menu2 {
-    display: block;
-}
-
-#menu:checked ~ .menuBtn {
-    position: absolute;
-    z-index: 150;
-    top: .5em;
-    left: .5em;
-} 
-
 .menuBtn {
     display: none;
     cursor: pointer;
@@ -127,6 +94,39 @@ header a {
         margin: 0;
         font-size: 25px;
         text-align: center;
+    }
+
+    #menu1 {
+        display: block;
+    }
+
+    #menu2 {
+        display: none;
+    } 
+
+    #menu:checked ~ div {
+        display: grid;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #menu:checked ~ a {
+        display: none;
+    }
+
+    #menu:checked ~ #menu1 {
+        display: none;
+    }
+
+    #menu:checked ~ #menu2 {
+        display: block;
+    }
+
+    #menu:checked ~ .menuBtn {
+        position: absolute;
+        z-index: 150;
+        top: .5em;
+        left: .5em;
     }
 }
 
