@@ -11,7 +11,7 @@ const projects = [
     },
     {
         name: "rm rf",
-        about: "It is a reactJs webapp, with multiple features like posting public and private blogs & normal/admin user controls/permissions with markdown for posting. It's also full-stack project, powered by expressJs and reactJs & hosted on Heroku;",
+        about: "It is a reactJs webapp, with multiple features like posting public and private blogs & normal/admin user controls/permissions with markdown for posting.",
         project: "https://perky-poetry.herokuapp.com",
         github: "https://github.com/rootz491/rm-rf",
         img: "./img/rmrf.png"
