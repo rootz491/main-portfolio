@@ -10,6 +10,13 @@ const projects = [
         img: "./img/perky.png"
     },
     {
+        name: "rm rf",
+        about: "It is a reactJs webapp, with multiple features like posting public and private blogs & normal/admin user controls/permissions with markdown for posting. It's also full-stack project, powered by expressJs and reactJs & hosted on Heroku;",
+        project: "https://perky-poetry.herokuapp.com",
+        github: "https://github.com/rootz491/rm-rf",
+        img: "./img/rmrf.png"
+    },
+    {
         name: "Connect",
         about: "Connect is a simple app where user can login and post their thoughts, created while learning Firebase.",
         project: "https://connect-491.web.app",

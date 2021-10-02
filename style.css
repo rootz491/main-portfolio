@@ -369,7 +369,6 @@ section {
 }
 
 .writeupsCover {
-    width: 70%;
     min-height: 80vh;
     margin: auto;
 }
@@ -432,12 +431,6 @@ section {
     text-align: justify;
     color: #FFF;
     min-height: 100px;
-}
-
-@media screen and (max-width: 1200px) {
-    .writeupsCover {
-        width: 90%;
-    }
 }
 
 @media screen and (max-width: 900px) {
